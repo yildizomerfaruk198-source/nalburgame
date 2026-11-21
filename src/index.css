@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #18100a;
+    color: #f4ead5;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+}
+
+.font-display {
+  font-family: "Lora", Georgia, serif;
+}
+
+.font-mono-num {
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+@keyframes floatUpFade {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -64px);
+  }
+}
+
+.animate-float-up {
+  animation: floatUpFade 1.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
